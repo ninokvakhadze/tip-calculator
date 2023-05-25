@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip caculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <img src="./SPLITTER.png" alt="" class="SPLITTER" />
+    <div class="main">
+      <div class="main-section1">
+        <div class="bill-div">
+          <h3>Bill</h3>
+          <input type="number" name="bill" class="bill-input" placeholder="0" />
+        </div>
+        <div class="tip-div">
+          <h3>Select Tip %</h3>
+          <div class="button-container">
+            <button class="percent-button">5%</button>
+            <button class="percent-button">10%</button>
+            <button class="percent-button">15%</button>
+            <button class="percent-button">25%</button>
+            <button class="percent-button">50%</button>
+            <input
+              type="number"
+              name="custom"
+              class="tip-input"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+        <div class="numberofpeople">
+          <div class="numberofpeople-component">
+          <h3 >Number of People</h3>
+          <h4 id="error">Can’t be zero</h4>
+          </div>
+          <input
+            type="number"
+            min="0"
+            name="people"
+            class="people-input"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="amount-total">
+          <p class="amount-total-text">Tip Amount</p>
+          <p class="person">/ person</p>
+          <p class="result">$0.00</p>
+        </div>
+        <div class="amount-total">
+          <p class="amount-total-text">Total</p>
+          <p class="person">/ person</p>
+          <p class="result2">$0.00</p>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+  </body>
+</html>
