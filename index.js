@@ -26,7 +26,6 @@ customPer.addEventListener("input", function (e) {
   calculate();
 });
 
-
 people.addEventListener("input", function (e) {
   peopleAmount = Number(e.target.value);
   calculate();
